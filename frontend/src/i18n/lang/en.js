@@ -27,7 +27,8 @@ const en = {
     systemManage: "systemManage",
     unitManage: "unitManage",
     roleManage: "roleManage",
-    systemSetting: "systemSetting"
+    systemSetting: "systemSetting",
+    projectList: "projectList"
   },
   rightMenu: {
     close: "close",

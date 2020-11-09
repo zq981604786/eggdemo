@@ -5,7 +5,6 @@ import Router from "vue-router"
 import Login from "@/views/login/index"
 import Layout from "@/views/layout/layout"
 import HomeMain from "@/views/index/mainIndex"
-
 // 不是必须加载的组件使用懒加载
 const NotFound = () => import("@/views/page404")
 
@@ -178,7 +177,26 @@ let addRouter = [
   }
 ]
 
+let userRouter = [
+  // {
+  //   path: "/project",
+  //   iconCls: "fa fa-list", // 图标样式class
+  //   name: "projectList",
+  //   component: Layout,
+  //   alone: true,
+  //   children: [
+  //     {
+  //       path: "/project/",
+  //       iconCls: "fa fa-list", // 图标样式class
+  //       name: "projectList",
+  //       component: ProjectList,
+  //       children: []
+  //     }
+  //   ]
+  // },
+]
+
 export default new Router({
   routes: defaultRouter
 })
-export {defaultRouter, addRouter}
+export {defaultRouter, addRouter, userRouter}

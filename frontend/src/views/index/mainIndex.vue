@@ -37,16 +37,16 @@
             <p><span class="tit">基于框架</span>vue2.0全家桶 + element-ui</p>
             <p><span class="tit">主要特色</span>单页面 / 响应式 / 无限级菜单 / 权限管理 / 极简</p>
             <p><span class="tit">获取渠道</span>
-                <span class="gitbox">
+                <!-- <span class="gitbox">
                   <a target="_blank" href="https://github.com/Nirongxu/nodePlatform-eggjs"><el-button type="primary" icon="el-icon-download" size="small">github</el-button></a>
                   <a target="_blank" href="https://gitee.com/nirongxu/nodePlatform-eggjs"><el-button type="primary" icon="el-icon-download" size="small">码云</el-button></a>
-                </span>
+                </span> -->
             </p>
           </div>
         </div>
       </el-col>
     </el-row>
-    <el-row>
+    <!-- <el-row>
       <el-col :span="24">
         <line-echarts id="lineEcharts" height="300px" ref="echarts"></line-echarts>
       </el-col>
@@ -55,7 +55,7 @@
       <el-col :span="24">
         <maintable id="maintable"></maintable>
       </el-col>
-    </el-row>
+    </el-row> -->
   </div>
 </template>
 

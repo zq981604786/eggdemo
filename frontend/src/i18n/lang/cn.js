@@ -24,7 +24,8 @@ const cn = {
     systemManage: "系统管理",
     unitManage: "单位管理",
     roleManage: "角色管理",
-    systemSetting: "系统配置项"
+    systemSetting: "系统配置项",
+    projectList: "项目列表"
   },
   rightMenu: {
     close: "关闭",

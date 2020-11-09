@@ -13,9 +13,11 @@ router.beforeEach((to, from, next) => {
       if (!store.getters.info) {
         (async function getAddRouters () {
           fetchUser.fetchGetUserInfo().then(async function (response) {
+            console.log("esponse.data", response.data)
             await store.dispatch("getInfo", response.data)
             await store.dispatch("newRoutes", store.getters.info.authorityRouter)
             let newAddRouters = store.getters.addRouters
+            console.log("newAddRouters", store.getters.info)
             await router.addRoutes(newAddRouters)
             next({path: to.path})
           }).catch(function (error) {
@@ -24,7 +26,7 @@ router.beforeEach((to, from, next) => {
         }())
       } else {
         let is404 = to.matched.some(record => {
-          console.log(record)
+          // console.log(record)
           if (record.meta.role) {
             return store.getters.info.authorityRouter === -1
           }

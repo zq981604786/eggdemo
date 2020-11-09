@@ -8,15 +8,15 @@
       </div>
       <div class="loginBox">
         <div class="loginCon">
-          <p class="title">nodePlatform</p>
-          <p class="title">前台: vue + element-ui</p>
-          <p class="title">后台: egg.js</p>
+          <p class="title">管理系统</p>
+          <!-- <p class="title">前台: vue + element-ui</p>
+          <p class="title">后台: egg.js</p> -->
           <el-card shadow="always" class="login-module" v-if="smdl">
             <div slot="header" class="clearfix formTitlt">
               <span>密码登录</span>
               <span class="titIconbox">
-              <i class="iconfont xu-saomadenglu2 fa-lg iconcolor"></i>
-              <i class="iconfont xu-saomadenglu01 el-icon--right fa-lg pointer" @click="smdl = !smdl"></i>
+              <!-- <i class="iconfont xu-saomadenglu2 fa-lg iconcolor"></i>
+              <i class="iconfont xu-saomadenglu01 el-icon--right fa-lg pointer" @click="smdl = !smdl"></i> -->
             </span>
             </div>
             <el-form :model="loginForm" status-icon label-width="100px" class="demo-ruleForm">
@@ -32,13 +32,13 @@
               </el-form-item>
               <p class="smalltxt">
                 <router-link class="a" to="#">忘记密码</router-link>
-                <router-link class="a" to="#">忘记会员名</router-link>
-                <router-link class="a" to="#">免费注册</router-link>
+                <!-- <router-link class="a" to="#">忘记会员名</router-link>
+                <router-link class="a" to="#">免费注册</router-link> -->
               </p>
             </el-form>
           </el-card>
 
-          <el-card shadow="always" class="login-module" v-else>
+          <!-- <el-card shadow="always" class="login-module" v-else>
             <div slot="header" class="clearfix formTitlt">
               <span>扫码登录</span>
               <span class="titIconbox">
@@ -58,7 +58,7 @@
                 <router-link class="a" to="#">免费注册</router-link>
               </p>
             </div>
-          </el-card>
+          </el-card> -->
         </div>
       </div>
     </div>
